@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+ --Purple: hsl(259, 100%, 65%);
+--Light-red: hsl(0, 100%, 67%);
+--White: hsl(0, 0%, 100%);
+--Off-white: hsl(0, 0%, 94%);
+--Light-grey: hsl(0, 0%, 86%);
+--Smokey-grey: hsl(0, 1%, 44%);
+--Off-black: hsl(0, 0%, 8%);
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--Off-white);
+}
+
+.hero_main{
+    width: 95%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border-bottom-right-radius: 6rem ;
+    max-width: 800px;
+}
+
+.formularios_form{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.formularios_formulario{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+   
+    
+
+}
+
+.formulario_label{
+    font-weight: 700;
+    color: var(--Smokey-grey)
+}
+
+.formulario_label--error{
+    color: var(--Light-red)
+}
+
+.formulario_input{
+    width: 90%;
+    max-width: 6rem;
+
+    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: 800;
+    border: 1.5px solid var(--Light-grey);
+    border-radius: 10px;
+    outline: none;
+}
+
+input:hover{
+    border-color: var(--Purple);
+}
+
+.formulario_input--error{
+    border: 1.5px solid var(--Light-red);
+}
+
+.formularios_inputs--error{
+    
+    font-size: .8rem;
+    color: var(--Light-red);
+    padding: 5px;
+    display: none;
+}
+
+.formularios__error{
+    color: var(--Light-red);
+    display: none;
+    padding: 5px;
+}
+
+.formularios_error--active{
+    display: block;
+}
+
+.formularios_button{
+    border: none;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--Purple);
+    margin: 2.5rem auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+    transition: .3s ease ;
+}
+
+.formularios_button:hover{
+    background-color: var(--Off-black);
+}
+
+.formularios_button_container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formularios_button_container::after{
+content: "";
+width: 95%;
+height: 1.5px;
+background-color: var(--Light-grey);
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+margin: auto;
+
+
+}
+
+.formularios_img{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.results_date--number{
+    color: var(--Purple);
+    font-size: 3rem;
+    font-weight: 800
+}
+
+.results_date{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+@media(min-width: 768px){
+    .hero_main{
+        width: 95%;
+        background-color: white;
+        padding: 60px;
+        border-radius: 20px;
+        border-bottom-right-radius: 14rem ;
+        max-width: 900px;
+    }
+    .formularios_formulario{
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        margin: unset
+       
+        
+    
+    }
+    .formulario_input{
+        width: 150px ;
+        max-width: unset;
+        padding: 15px;
+        font-size: 2rem;
+        font-weight: 800;
+        border: 1.5px solid var(--Light-grey);
+        border-radius: 10px;
+        outline: none;
+    }
+
+    .formularios_form{
+        width: 100%;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: unset;
+    }
+
+    .formularios_button{
+        border: none;
+        border-radius: 50%;
+        width: 6rem;
+        height: 6rem;
+        background-color: var(--Purple);
+        margin: auto;
+        margin-right: 0;
+        display: block;
+        position: relative;
+        z-index: 1;
+        transition: .3s ease ;
+    }
+
+    .results_date{
+        font-size: 4.5rem;
+        font-weight: 800;
+    }
+    .results_date--number{
+        color: var(--Purple);
+        font-size: 4.5rem;
+        font-weight: 800
+    }
+    
+}
+
+
+
+

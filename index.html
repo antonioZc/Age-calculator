@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/styles.css">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+
+  <main class="hero_main">
+
+    <section class="formularios">
+      <form class="formularios_form">
+        <div class="formularios_formulario"> 
+          <label for="formulario_dia" class="formulario_label" id="labelDay">DAY</label>
+          <input type="number" class="formulario_input" placeholder="DD" id="formulario_dia" data-date="dia" maxlength="2">
+          <p class="formularios_inputs--error" id="errorDay">Must be a valid day</p>
+        </div>
+
+      
+        <div class="formularios_formulario">
+          <label for="formulario_mes" class="formulario_label" id="labelMonth">MONTH</label>
+          <input type="number" class="formulario_input" placeholder="MM" id="formulario_mes" data-date="month" maxlength="2">
+          <p class="formularios_inputs--error" id="errorMonth">Must be a valid month</p>
+        </div>
+
+     
+        <div class="formularios_formulario">
+          <label for="formulario_año" class="formulario_label" id="labelYear">YEAR</label>
+          <input type="number" class="formulario_input" placeholder="YYYY" id="formulario_año" data-date="year" maxlength="4">
+          <p class="formularios_inputs--error" id="errorYear">Must be a valid year</p>
+        </div>
+      </form>
+
+      <p class="formularios__error" id="dateError">Please select a valid date</p>
+    </section>
+      
+    <div class="formularios_button_container">
+      <button type="submit" id="button" class="formularios_button">
+        <img src="assets/images/icon-arrow.svg" alt="arrow" class="formularios_img">
+      </button>
+
+    </div>
+      
+      
+
+    <section class="results">
+      <div class="results_date" ><span id="results_year" class="results_date--number">- -</span> Years</div>
+      <div class="results_date" ><span id="results_month" class="results_date--number">- -</span> Months</div>
+      <div class="results_date" ><span id="results_day" class="results_date--number">- -</span> Days</div>
+
+    </section>
+  </main>
+  
+  <script src="./src/index2.js"></script>
+</body>
+</html>
